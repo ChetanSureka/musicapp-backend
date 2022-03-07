@@ -1,5 +1,8 @@
-from django.http import HttpResponse
 from django.shortcuts import render
+from api.models import Rooms
+from api.serailizers import RoomSerailizer
+from rest_framework import generics
 
-def HomeView(request):
-    return HttpResponse("<h3>This is a front page...</h3>")
+class RoomView(generics.ListCreateAPIView):
+    queryset = Rooms.objects.all()
+    serializer_class = RoomSerailizer

@@ -43,7 +43,7 @@ INSTALLED_APPS = [
 
     # Custom Apps
     'api.apps.ApiConfig',
-    'main.apps.MainConfig',
+    'frontend.apps.FrontendConfig',
 ]
 
 MIDDLEWARE = [
