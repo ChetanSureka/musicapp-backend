@@ -15,7 +15,7 @@ def get_video(video_id, client="WEB"):
     
     return streams
 
-def search(query, client="WEB"):
+def Search(query, client="WEB"):
     client = InnerTube(client)
 
     data = client.search(query=query)

@@ -7,7 +7,7 @@ This Django-based Music App allows users to search and play music using the Inne
 Make sure you have the following installed on your machine:
 
 - Python 3.x
-- Django
+- FastAPI
 - Innertube (follow [Innertube documentation](https://github.com/tombulled/innertube))
 
 ## Installation
@@ -55,8 +55,11 @@ Make sure you have the following installed on your machine:
 Start the development server:
 
 ```bash
-python manage.py runserver http://localhost:8000/
+uvicorn main:app --reload
 ```
+
+API Docs at: `http://localhost:8000/docs/`
+
 
 Visit `http://localhost:8000/` in your web browser to access the Music App.
 
